@@ -19,7 +19,5 @@ and and Windows are:
 5. Select a single feature (station) from the fmi_stations.shp and using the OpenDataFMI plugin download the meteorological 
 data from the station.
 
-### Known issues
-- The radar data download does not work
 
 
