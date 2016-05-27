@@ -21,7 +21,7 @@ data from the station.
 
 ### Hints
 - QGIS can show e.g. OpenStreetMap or Google Map layers through the [OpenLayers Plugin](http://hub.qgis.org/projects/openlayers/wiki) which can put the FMI measurement stations on a map (Plugins -> OpenLayers plugin -> Add OpenStreetMap layer)
-- E.g. National Land Survey of Finland (Maanmittauslaitos) has opened maps and other spatial datasets that can help locating the FMI measurement stations available at [https://www.avoindata.fi/data/en/dataset](https://www.avoindata.fi/data/en/dataset)
+- E.g. National Land Survey of Finland (Maanmittauslaitos) has opened maps and other spatial datasets that can help locating the FMI measurement stations ([https://www.avoindata.fi/data/en/dataset](https://www.avoindata.fi/data/en/dataset))
 
 
 
