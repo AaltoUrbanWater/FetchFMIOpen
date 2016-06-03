@@ -19,7 +19,7 @@ Meteorological Institute] (http://en.ilmatieteenlaitos.fi/) (FMI) [open data arc
 data from the station.
 
 ### Hints
-- QGIS can show e.g. OpenStreetMap or Google Map layers through the [OpenLayers Plugin](http://hub.qgis.org/projects/openlayers/wiki) which can put the FMI measurement stations on a map (Plugins -> OpenLayers plugin -> Add OpenStreetMap layer)
+- QGIS can show e.g. OpenStreetMap or Google Map layers through the [OpenLayers Plugin](http://hub.qgis.org/projects/openlayers/wiki) which can put the FMI measurement stations on a map (Web -> OpenLayers plugin -> OpenStreetMap)
 - E.g. National Land Survey of Finland (Maanmittauslaitos) has opened maps and other spatial datasets that can help locating the FMI measurement stations ([https://www.avoindata.fi/data/en/dataset](https://www.avoindata.fi/data/en/dataset))
 
 
