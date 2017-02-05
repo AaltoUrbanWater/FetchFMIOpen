@@ -9,9 +9,9 @@ This [QGIS](http://www.qgis.org/en/site/) plugin provides a tool to download met
 Meteorological Institute] (http://en.ilmatieteenlaitos.fi/) (FMI) [open data archive](https://en.ilmatieteenlaitos.fi/open-data).
 
 ### Instructions 
-1. Extract the contents of OpenDataFMI.zip to QGIS plugin folder. The default location of QGIS plugin folder on Linux and Windows are: 
-  * \~/.qgis2/python/plugins/ 
-  * C:\Users\USERNAME\\.qgis2\python\plugin\\
+1. Extract the contents of OpenDataFMI.zip to QGIS plugin folder. The default location of QGIS plugin folder on Linux, Mac and Windows are: 
+  * \~/.qgis2/python/plugins/                   (Linux, Mac)
+  * C:\Users\USERNAME\\.qgis2\python\plugin\\   (Windows)
 2. Extract the contents of fmi_stations.zip
 3. In QGIS, enable the OpenDataFMI plugin 
 4. Add the fmi_stations.shp to a project
