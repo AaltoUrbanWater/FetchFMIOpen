@@ -4,6 +4,9 @@ A QGIS plugin to download meteorological data from the FMI open data archive
 - Contributors: Teemu Kokkonen & [Tero Niemi](http://www.github.com/tjniemi/), Aalto University School of Engineering
 - License: GNU GPL
 
+![GUI preview](./GUI_preview.png)
+
+
 ### Overview
 This [QGIS](http://www.qgis.org/en/site/) plugin provides a tool to download meteorological data from the [Finnish 
 Meteorological Institute] (http://en.ilmatieteenlaitos.fi/) (FMI) [open data archive](https://en.ilmatieteenlaitos.fi/open-data).
