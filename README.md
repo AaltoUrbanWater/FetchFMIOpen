@@ -1,7 +1,7 @@
 # FetchFMIOpen
 A QGIS plugin to download meteorological observation data from the FMI open data archive.
 
-Most of the observational point data available from the open data archive is downloadable using the plugin. Available datasets include
+Most of the observational point data available from the open data archive is downloadable using the plugin. Available datasets include:
 - Daily weather observations
 - Instantaneous weather observations
 - Monthly weather observations
