@@ -14,7 +14,7 @@ Most of the observational point data available from the open data archive is dow
 - Sea water level, temperature and wave observations
 - Road weather observations from [Finnish Transport Agency](https://fta.fi) road weather stations
 
-![GUI preview](./GUI_preview.png)
+![GUI preview](./GUI_preview_20180129.png)
 
 ### Instructions
 In order to acquire data from the FMI open data archive an API-key is required. To get the key you have to [register](https://ilmatieteenlaitos.fi/rekisteroityminen-avoimen-datan-kayttajaksi).
