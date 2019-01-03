@@ -2,8 +2,8 @@
 A QGIS plugin to download meteorological observation data from the FMI open data archive.
 
 ### Overview
-This [QGIS](http://www.qgis.org/en/site/) plugin provides a tool to download meteorological observation data from the [Finnish
-Meteorological Institute](http://www.en.ilmatieteenlaitos.fi/) (FMI) [open data archive](https://en.ilmatieteenlaitos.fi/open-data).
+This [QGIS](https://www.qgis.org/en/site/) plugin provides a tool to download meteorological observation data from the [Finnish
+Meteorological Institute](https://en.ilmatieteenlaitos.fi/) (FMI) [open data archive](https://en.ilmatieteenlaitos.fi/open-data).
 
 Most of the observational point data available from the open data archive is downloadable using the plugin. Available datasets include:
 - Daily weather observations
@@ -14,23 +14,26 @@ Most of the observational point data available from the open data archive is dow
 - Sea water level, temperature and wave observations
 - Road weather observations from [Finnish Transport Agency](https://fta.fi) road weather stations
 
-![GUI preview](./GUI_preview_20180129.png)
+![GUI preview](./GUI_preview.png)
 
 ### Instructions
-In order to acquire data from the FMI open data archive an API-key is required. To get the key you have to [register](https://ilmatieteenlaitos.fi/rekisteroityminen-avoimen-datan-kayttajaksi).
+After the introduction of QGIS 3.4, there are now two versions of the tool available depending on whether QGIS 2.x.x or 3.x.x is being used. Download the version of the tool corresponding to your version of QGIS.
 
-To download the data using the tool:
-1. Extract the contents of FetchFMIOpen.zip to QGIS plugin folder. The default location of QGIS plugin folder on Linux, Mac and Windows are:
-  * \~/.qgis2/python/plugins/                   (Linux, Mac)
-  * C:\Users\USERNAME\\.qgis2\python\plugins\\   (Windows)
+#### Getting data  
+1. Extract the contents of FetchFMIOpen_QGISv3.zip or FetchFMIOpen_QGISv2.zip to the QGIS plugin folder.  
+The default locations of QGIS plugin folders on Linux, Mac and Windows are (for QGIS v3.X OR v2.X):
+  * \~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/ OR .qgis2/python/plugins/ (Linux, Mac)
+  * C:\Users\USERNAME\\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins OR C:\Users\USERNAME\\.qgis2\python\plugins\\   (Windows)
 2. Extract the contents of fmi_stations.zip
 3. In QGIS, enable the FetchFMIOpen plugin
-4. Add the fmi_weather_stations.shp to a project
+4. Add e.g. fmi_weather_stations.shp to a project
 5. Select a single feature (station) from the fmi_weather_stations.shp and using the FetchFMIOpen plugin download the weather observation data from the station.
 
 Note that some stations only provide certain observations. E.g. solar radiation observations are only available from Sodankylä, Jokioinen, Helsinki, Parainen, Vantaa, Jyväskylä, Sotkamo and Utsjoki stations, the sea level observations from the mareographs, and the wave etc. observations from buoys.  
 
-Script get_livi_stations.py can be used to retrieve a shapefile of Finnish Transport Agency road weather stations.
+#### Traffic station information
+Current Finnish Transport Agency road weather stations can be aquired using script get_livi_stations.py.  
+The script requires following non-standard Python packages (easily installed using e.g. [Anaconda](https://www.anaconda.com/download/#linux)): [pandas](https://anaconda.org/anaconda/pandas), [geopandas](https://anaconda.org/conda-forge/geopandas), [shapely](https://anaconda.org/anaconda/shapely).
 
 
 ### Map data

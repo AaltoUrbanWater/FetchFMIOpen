@@ -2,6 +2,21 @@
 """Get a list of road weather stations and save as a shapefile.
 
 Copyright (C) 2018 Tero Niemi, Aalto University School of Engineering
+
+    This file is part of FetchFMIOpen.
+
+    FetchFMIOpen is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    FetchFMIOpen is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with FetchFMIOpen.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import sys
@@ -12,19 +27,19 @@ import geopandas as gpd
 import shapely.wkt
 
 
-if (len(sys.argv) != 3):
+if (len(sys.argv) != 2):
     print("Usage:\n"
-          "./get_livi_stations.py [FMI-APIKEY] [PATH TO OUTPUT FILE AS *.shp]")
+          "./get_livi_stations.py [PATH TO OUTPUT FILE AS *.shp]")
     sys.exit()
-if (not sys.argv[2].lower().endswith('.shp')):
+if (not sys.argv[1].lower().endswith('.shp')):
     print('Error:\n'
-          'Third argument has to be a [PATH TO OUTPUT *.shp FILE]')
+          'Argument has to be a [PATH TO OUTPUT *.shp FILE]')
     sys.exit()
 
+out_fp = sys.argv[1]
 crs = {'init': 'epsg:4326'}
-dataRequest = 'http://data.fmi.fi/fmi-apikey/' + \
-    sys.argv[1] + \
-    ('/wfs?request=getFeature&storedquery_id=livi::observations::road::finland'
+dataRequest = 'http://opendata.fmi.fi/' + \
+    ('wfs?request=getFeature&storedquery_id=livi::observations::road::finland'
         '::timevaluepair&parameters=TA&crs=epsg:4326')
 
 nsm = {"wml2": "http://www.opengis.net/waterml/2.0",
@@ -102,5 +117,5 @@ df = df.drop('WKT', axis=1)
 gdf = gpd.GeoDataFrame(df, crs=crs, geometry=geometry)
 
 # Write final dataframe into a shapefile
-gdf.to_file(sys.argv[2], driver='ESRI Shapefile', encoding='utf-8')
-print('Saved road weather stations to ' + sys.argv[2])
+gdf.to_file(out_fp, driver='ESRI Shapefile', encoding='utf-8')
+print('Saved road weather stations to ' + out_fp)
