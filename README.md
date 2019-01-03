@@ -22,7 +22,7 @@ After the introduction of QGIS 3.4, there are now two versions of the tool avail
 #### Getting data  
 1. Extract the contents of FetchFMIOpen_QGISv3.zip or FetchFMIOpen_QGISv2.zip to the QGIS plugin folder.  
 The default locations of QGIS plugin folders on Linux, Mac and Windows are (for QGIS v3.X OR v2.X):
-  * \~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/ OR .qgis2/python/plugins/ (Linux, Mac)
+  * \~/.local/share/QGIS/QGIS3/profiles/default/python/plugins/ OR \~/.qgis2/python/plugins/ (Linux, Mac)
   * C:\Users\USERNAME\\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins OR C:\Users\USERNAME\\.qgis2\python\plugins\\   (Windows)
 2. Extract the contents of fmi_stations.zip
 3. In QGIS, enable the FetchFMIOpen plugin
